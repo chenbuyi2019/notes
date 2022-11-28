@@ -2,6 +2,7 @@
 [Kubuntu 官网](https://kubuntu.org/getkubuntu/)  
 [北京外国语大学开源软件镜像站](https://mirrors.bfsu.edu.cn/ubuntu-cdimage/kubuntu/releases/)  
 [rufus](https://rufus.ie/)  
+[balenaEtcher](https://www.balena.io/etcher/)   
 
 # 设置系统关机的最长等待时间
 在 `/etc/systemd/system.conf` 的末尾加上：   
