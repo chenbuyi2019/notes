@@ -35,6 +35,7 @@ sudo update-grub
 - [Discord](https://discord.com/)
 - [Hello Minecraft Launcher](https://github.com/huanghongxun/HMCL/releases)
 - [Lutris](https://github.com/lutris/lutris/releases)
+- [RustDesk](https://github.com/rustdesk/rustdesk/releases)
 
 # 设置输入法以及系统代理变量
 在 `/etc/environment` 的末尾加上：   
@@ -102,7 +103,6 @@ fcitx pinyin 的配置保存在 `$HOME/.config/fcitx/`
 - [Dism++](https://github.com/Chuyu-Team/Dism-Multi-language/releases)
 - [7-Zip](https://www.7-zip.org/download.html)
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-- [Sandboxie Plus](https://sandboxie-plus.com/downloads/)
 - [Microsoft Build of OpenJDK](https://docs.microsoft.com/en-us/java/openjdk/download)
 - [Oracle Java](https://java.com/zh-CN/download/manual.jsp)
 - [Microsoft Visual C++ Redistributable](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
