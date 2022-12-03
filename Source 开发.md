@@ -13,3 +13,30 @@
 
 to 之前的数字表示原来的限制
 
+# 编译脚本
+```powershell
+$ErrorActionPreference = "Stop"
+$root = "C:\Program Files (x86)\Steam\steamapps\common\GarrysMod"
+Set-Location "$root\bin"
+$game = "$root\garrysmod"
+$vmf = "C:\aaa.vmf"
+$bsp = $vmf.Substring(0, $vmf.Length - 4) + ".bsp"
+if (Test-Path -Path $bsp) {
+    Remove-Item $bsp
+}
+$startTime = Get-Date
+Write-Output "start VBSP : " $startTime.ToString()
+./vbsp.exe -game $game -leaktest $vmf
+if (Test-Path -Path $bsp) {
+    Write-Output "start VVIS : " (Get-Date).ToString()
+    ./vvis.exe -game $game $vmf
+    Write-Output "start VRAD : " (Get-Date).ToString()
+    ./vrad.exe -game $game $vmf
+    Copy-Item -Path $bsp -Destination "$game\maps" -Force
+}
+Set-Location $PSScriptRoot
+Write-Output "----"
+$now = (Get-Date)
+Write-Output ($now - $startTime)
+Write-Output "----"
+```
