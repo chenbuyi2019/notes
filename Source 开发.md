@@ -1,5 +1,13 @@
 # 软件下载
 - [BSPSource](https://github.com/ata4/bspsrc/releases)
+- [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
+
+# SteamCMD
+```bash
+login anonymous
+app_update 740 validate #csgo服务端
+app_update 4020 validate #gmod服务端
+```
 
 # Garry's Mod 对地图的限制
 - MAX_MAP_ENTITIES - 8192 to 20480
