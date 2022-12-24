@@ -1,6 +1,10 @@
 # 软件下载
 - [BSPSource](https://github.com/ata4/bspsrc/releases)
 - [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
+- [Hammer++](https://ficool2.github.io/HammerPlusPlus-Website/download.html)
+- [Metamod:Source](https://www.metamodsource.net/downloads.php?branch=stable)
+- [SourceMod](https://www.sourcemod.net/downloads.php?branch=stable)
+- [NoLobbyReservation](https://github.com/vanz666/NoLobbyReservation/releases)
 
 # SteamCMD
 ```bash
