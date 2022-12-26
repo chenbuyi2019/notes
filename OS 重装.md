@@ -101,3 +101,18 @@ sudo npm install -g typescript
 - [Vegas Pro 15](http://dl04.magix.net/2017/VEGASPro15/update/VEGAS_Pro_15.0.0.416_DE-EN-FR-ES_x64.exe)
 - [K-Lite Codec Pack](https://codecguide.com/download_kl.htm)
 - [CloudMoe Windows 10+ Activation Toolkit Digital Edition](https://github.com/TGSAN/CMWTAT_Digital_Edition/releases)
+
+
+# go
+[官网下载](https://go.dev/dl/) ，解压到 `/usr/local/`   
+在 `$HOME/.profile` 里面写上：  
+```bash
+export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
+```
+更换国内源，关闭默认的 CGO ：   
+```bash
+go env -w GO111MODULE="on"
+go env -w GOPROXY="https://goproxy.cn,direct"
+go env -w CGO_ENABLED="0"
+```
